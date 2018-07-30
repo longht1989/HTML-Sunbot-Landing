@@ -1,0 +1,57 @@
+/* ====================================   Global fonts   ==================================== */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto_gdi.eot');
+    src: local('☺'),
+    url('../fonts/Roboto_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto_gdi.woff') format('woff'),
+    url('../fonts/Roboto_gdi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Italic_gdi.eot');
+    src: local('☺'),
+    url('../fonts/Roboto-Italic_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Italic_gdi.woff') format('woff'),
+    url('../fonts/Roboto-Italic_gdi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold_gdi.eot');
+    src: local('☺'),
+    url('../fonts/Roboto-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Bold_gdi.woff') format('woff'),
+    url('../fonts/Roboto-Bold_gdi.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-BoldItalic_gdi.eot');
+    src: local('☺'),
+    url('../fonts/Roboto-BoldItalic_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-BoldItalic_gdi.woff') format('woff'),
+    url('../fonts/Roboto-BoldItalic_gdi.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../fonts/RobotoLight_gdi.eot');
+    src: local('☺'),
+    url('../fonts/RobotoLight_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RobotoLight_gdi.woff') format('woff'),
+    url('../fonts/RobotoLight_gdi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

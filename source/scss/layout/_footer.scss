@@ -1,0 +1,40 @@
+/* ====================================
+   Footer's style
+   ==================================== */
+
+.site-footer {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-color: #242424;
+    .site-wrap {
+        padding: 16px 0;
+    }
+    .text__body {
+        float: left;
+        font-family: "RobotoLight", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 14px;
+        b {
+            font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        a {
+            color: white;
+            &:hover {
+                color: #ddd;
+            }
+        }
+    }
+    .social {
+        @include breakpoint(sm) {
+            float: right;
+        }
+        a {
+            display: inline-block;
+            margin: 0 4px;
+            img {
+                height: 16px;
+                width: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+/* ====================================
+   All region in project
+   ==================================== */
+
+
+/* item global style */
+
+.item {
+    &__icon {
+        margin-bottom: 16px;
+        img {
+            width: 32px;
+            height: auto;
+        }
+    }
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        margin-bottom: 16px;
+    }
+    &__desc {
+        margin-bottom: 32px;
+        line-height: 1.5em;
+        max-height: 6em;
+        overflow: hidden;
+    }
+    &--center {
+        text-align: center;
+        padding: 48px 32px;
+        background: #F5F8F9;
+        box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.10);
+        border-radius: 4px;
+        .item__title {
+            font-size: 32px;
+            text-transform: uppercase;
+            font-family: "RobotoLight", Arial, "Helvetica Neue", Helvetica, sans-serif;
+            margin-bottom: 32px;
+        }
+    }
+    &--right {
+        text-align: right;
+    }
+    &--primary {
+        background-color: $brand-primary;
+        color: white;
+        a {
+            color: white;
+        }
+    }
+    .area--grey & {
+        background-color: white;
+        box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.10);
+        border-radius: 4px;
+        .item__title {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .item__title {
+            margin-bottom: 16px;
+        }
+        .item__desc {
+            margin-bottom: 0;
+        }
+        .item__header {
+            padding: 16px;
+        }
+    }
+}
+
+.user {
+    position: relative;
+    overflow: hidden;
+    opacity: 0.6;
+    &-listing {
+        @include clearfix;
+        li {
+            float: left;
+            width: 16.66%;
+        }
+    }
+    &__name {
+        padding: 8px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .5);
+        color: white;
+        transition: all 0.2s linear;
+    }
+    &:hover {
+        opacity: 1;
+        .user__name {
+            transform: translateY(-100%);
+        }
+    }
+    img {
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+    &-join {
+        opacity: 1;
+        img {
+            -webkit-filter: grayscale(0%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+        }
+    }
+}
