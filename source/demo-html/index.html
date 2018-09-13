@@ -30,11 +30,11 @@
                 <h1 class="logo"><a href="/"><img src="../app_themes/img/logo.png" alt="" class="img-responsive"></a></h1>
                 <div class="site-header__navbar">
                     <ul>
-                        <li><a href="#" title="Giới thiệu">Giới thiệu</a></li>
-                        <li><a href="#" title="Khóa học">Khóa học</a></li>
-                        <li><a href="#" title="Sự kiện">Sự kiện</a></li>
-                        <li><a href="#" title="Đối tác">Đối tác</a></li>
-                        <li><a href="#" title="Liên hệ">Liên hệ</a></li>
+                        <li><a href="#" data-scroll="introduction" title="Giới thiệu">Giới thiệu</a></li>
+                        <li><a href="#" data-scroll="course" title="Khóa học">Khóa học</a></li>
+                        <li><a href="#" data-scroll="feature" title="Sự kiện">Tính năng</a></li>
+                        <li><a href="#" data-scroll="client" title="Đối tác">Đối tác</a></li>
+                        <li><a href="#" data-scroll="contact" title="Liên hệ">Liên hệ</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,7 +62,7 @@
     <!-- site content -->
     <main id="site-content" class="site-content">
         <!-- normal area -->
-        <div class="area">
+        <div class="area" id="introduction">
             <div class="site-wrap">
                 <div class="zone__header">
                     <h2 class="zone__title">Lập trình tư duy cùng Sunbot</h2>
@@ -100,7 +100,7 @@
         </div>
         <!-- end normal area -->
         <!-- normal area -->
-        <div class="area area--grey">
+        <div class="area area--grey" id="course">
             <div class="site-wrap">
                 <div class="zone__header">
                     <h2 class="zone__title">Giáo trình học</h2>
@@ -150,10 +150,10 @@
         </div>
         <!-- end normal area -->
         <!-- normal area -->
-        <div class="area">
+        <div class="area" id="feature">
             <div class="site-wrap">
                 <div class="zone__header">
-                    <h2 class="zone__title--sub">Giáo trình học</h2>
+                    <h2 class="zone__title--sub">Tính năng</h2>
                 </div>
                 <div class="zone__content">
                     <div class="row">
@@ -220,7 +220,7 @@
         </div>
         <!-- end normal area -->
         <!-- normal area -->
-        <div class="area area--customer">
+        <div class="area area--customer" id="client">
             <div class="site-wrap">
                 <div class="zone__header">
                     <h2 class="zone__title--sub">Khách hàng nhận xét</h2>
@@ -254,7 +254,7 @@
         </div>
         <!-- end normal area -->
         <!-- normal area -->
-        <div class="area area--grey">
+        <div class="area area--grey" id="about">
             <div class="site-wrap">
                 <div class="zone__header">
                     <h2 class="zone__title--sub">Chúng tôi là ai</h2>
@@ -327,7 +327,7 @@
         </div>
         <!-- end normal area -->
         <!-- normal area -->
-        <div class="area">
+        <div class="area" id="analysis">
             <div class="site-wrap">
                 <div class="zone__header">
                     <h2 class="zone__title--sub">Con số biết nói</h2>
@@ -343,7 +343,7 @@
         </div>
         <!-- end normal area -->
         <!-- normal area -->
-        <div class="area area--featured">
+        <div class="area area--featured" id="contact">
             <div class="site-wrap">
                 <div class="zone__content">
                     <div class="row">
@@ -427,7 +427,36 @@
         <div class="mask"></div>
     </footer>
     <!-- JS Global Customise -->
-    <script src="../Jscripts/custom.js "></script>
+    <script src="../Jscripts/custom.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $("[data-scroll=introduction]").on("click", function() {
+            $('html, body').animate({
+                scrollTop: $("#introduction").offset().top
+            }, 500);
+        });
+        $("[data-scroll=course]").on("click", function() {
+            $('html, body').animate({
+                scrollTop: $("#course").offset().top
+            }, 500);
+        });
+        $("[data-scroll=feature]").on("click", function() {
+            $('html, body').animate({
+                scrollTop: $("#feature").offset().top
+            }, 500);
+        });
+        $("[data-scroll=client]").on("click", function() {
+            $('html, body').animate({
+                scrollTop: $("#client").offset().top
+            }, 500);
+        });
+        $("[data-scroll=contact]").on("click", function() {
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top
+            }, 500);
+        });
+    });
+    </script>
     <!-- Js Dev plugin -->
     <!--[if lt IE 9]>
         <script src="../Jscripts/vendor/respond.js "></script>
