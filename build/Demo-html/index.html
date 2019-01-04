@@ -17,9 +17,11 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../App_Themes/img/favicon.png">
     <!-- CSS Customization -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../App_Themes/css/sunbot_landing.min.css">
     <!-- JS modernizr + Jquery + Components JS-->
     <script src="../Jscripts/sunbot_landing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelement-and-player.min.js"></script>
 </head>
 
 <body>
@@ -33,7 +35,7 @@
                         <li><a href="#" data-scroll="introduction" title="Giới thiệu">Giới thiệu</a></li>
                         <li><a href="#" data-scroll="course" title="Khóa học">Khóa học</a></li>
                         <li><a href="#" data-scroll="feature" title="Sự kiện">Tính năng</a></li>
-                        <li><a href="#" data-scroll="client" title="Đối tác">Đối tác</a></li>
+                        <li><a href="#" data-scroll="client" title="Album ảnh">Album ảnh</a></li>
                         <li><a href="#" data-scroll="contact" title="Liên hệ">Liên hệ</a></li>
                     </ul>
                 </div>
@@ -220,7 +222,7 @@
         </div>
         <!-- end normal area -->
         <!-- normal area -->
-        <div class="area area--customer" id="client">
+        <!-- <div class="area area--customer" id="client">
             <div class="site-wrap">
                 <div class="zone__header">
                     <h2 class="zone__title--sub">Khách hàng nhận xét</h2>
@@ -251,10 +253,9 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <!-- end normal area -->
-        <!-- normal area -->
-        <div class="area area--grey" id="about">
+        </div> -->
+
+        <!-- <div class="area area--grey" id="about">
             <div class="site-wrap">
                 <div class="zone__header">
                     <h2 class="zone__title--sub">Chúng tôi là ai</h2>
@@ -324,8 +325,22 @@
                     </ul>
                 </div>
             </div>
+        </div> -->
+        <div class="area area--grey" id="video">
+            <div class="site-wrap">
+                <div class="zone__header">
+                    <h2 class="zone__title">Video nổi bật</h2>
+                    <p class="text__body">Buổi học cùng Sunbot mang lại cho các bạn nhỏ sự hứng thú trong quá trình làm việc nhóm. Sunbot khiến trẻ vừa thỏa mãn niềm say mê công nghệ, vừa kích thích hoạt động thể chất và trí não cùng lúc.  Làm việc nhóm là một kĩ năng quan trọng giúp trẻ biết lắng nghe, cảm thông với người khác, hòa đồng và yêu thương mọi người. Và Sunbot chính là nguồn cảm hứng để trẻ có thể nâng cao kĩ năng đó</p>
+                </div>
+                <div class="zone__content">
+                    <div id="videoContainer">
+                        <video id="mainVideo" width="728" height="410" muted>
+                            <source src="https://youtu.be/tk-CElOTlmA" type="video/youtube" />
+                        </video>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- end normal area -->
         <!-- normal area -->
         <div class="area" id="analysis">
             <div class="site-wrap">
@@ -341,7 +356,27 @@
                 </div>
             </div>
         </div>
-        <!-- end normal area -->
+        <!-- normal area -->
+        <div class="area area--grey" id="client">
+            <div class="site-wrap">
+                <div class="zone__header">
+                    <h2 class="zone__title">Album ảnh</h2>
+                </div>
+                <div class="zone__content">
+                    <div class="slider">
+                        <ul>
+                            <li><img src="https://source.unsplash.com/random/1600x900?sig=01" alt="" class="img-responsive"></li>
+                            <li><img src="https://source.unsplash.com/random/1600x900?sig=02" alt="" class="img-responsive"></li>
+                            <li><img src="https://source.unsplash.com/random/1600x900?sig=03" alt="" class="img-responsive"></li>
+                        </ul>
+                        <div class="slider-control">
+                            <div class="slider-prev"></div>
+                            <div class="slider-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- normal area -->
         <div class="area area--featured" id="contact">
             <div class="site-wrap">
@@ -417,7 +452,7 @@
         <div class="site-wrap">
             <p class="text__body">© 2018 <b>SUNBOT</b> All rights reserved</p>
             <div class="social">
-                <a href="#"><img src="../app_themes/img/facebook.png" alt=""></a>
+                <a href="https://www.facebook.com/LaptrinhtuduyvoiSunbot/"><img src="../app_themes/img/facebook.png" alt=""></a>
                 <a href="#"><img src="../app_themes/img/Google.png" alt=""></a>
                 <a href="#"><img src="../app_themes/img/Instagram.png" alt=""></a>
                 <a href="#"><img src="../app_themes/img/Twitter.png" alt=""></a>
@@ -456,6 +491,12 @@
             }, 500);
         });
     });
+     player = new MediaElementPlayer(mainVideo, {
+            "hideVideoControlsOnLoad": true,
+            success: function(mediaElement, originalNode, instance) {
+                mediaElement.play();
+            }
+        });
     </script>
     <!-- Js Dev plugin -->
     <!--[if lt IE 9]>

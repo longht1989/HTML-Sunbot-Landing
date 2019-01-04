@@ -85,30 +85,30 @@
     line-height: 1.5em;
     font-family: "RobotoLight", Arial, "Helvetica Neue", Helvetica, sans-serif;
     position: relative;
-    &::before {
-        display: block;
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 0;
-        background: url(../img/icon-quote-open.png);
-        background-size: 68px 43px;
-        width: 68px;
-        height: 43px;
-        transform: translateY(-50%);
-    }
-    &::after {
-        display: block;
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 0;
-        background: url(../img/icon-quote-close.png);
-        background-size: 68px 43px;
-        width: 68px;
-        height: 43px;
-        transform: translateY(-50%);
-    }
+    // &::before {
+    //     display: block;
+    //     content: '';
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 0;
+    //     background: url(../img/icon-quote-open.png);
+    //     background-size: 68px 43px;
+    //     width: 68px;
+    //     height: 43px;
+    //     transform: translateY(-50%);
+    // }
+    // &::after {
+    //     display: block;
+    //     content: '';
+    //     position: absolute;
+    //     top: 50%;
+    //     right: 0;
+    //     background: url(../img/icon-quote-close.png);
+    //     background-size: 68px 43px;
+    //     width: 68px;
+    //     height: 43px;
+    //     transform: translateY(-50%);
+    // }
     &-prev {
         position: absolute;
         top: 50%;
